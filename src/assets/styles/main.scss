@@ -1,0 +1,12 @@
+@import '~normalize-scss';
+
+@import "abstracts/variables";
+
+@import "base/base";
+@import "components/buttons";
+@import "components/input";
+@import "components/menu";
+
+@import "layout/header";
+
+@import "pages/home";

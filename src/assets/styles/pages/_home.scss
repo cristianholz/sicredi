@@ -1,0 +1,109 @@
+.home {
+  background: $grey100;
+  padding: 30px 45px;
+
+  @media only screen and (max-width: 1023px) {
+    padding: 30px 20px 80px 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+
+    @media only screen and (max-width: 1023px) {
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 418px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width: 1023px) {
+      max-width: initial;
+    }
+
+    h2 {
+      font-size: 58px;
+      color: #323c32;
+      line-height: 62px;
+      margin-bottom: 30px;
+
+      @media only screen and (max-width: 1023px) {
+        font-size: 42px;
+        line-height: 48px;
+
+        br{
+          display: none;
+        }
+      }
+    }
+
+    small {
+      color: $green500;
+      font-size: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 630px;
+    height: 100%;
+
+    @media only screen and (max-width: 1023px) {
+      max-width: initial;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+
+      @media only screen and (max-width: 1023px) {
+       max-height: 500px;
+      }
+    }
+  }
+
+  &__links {
+    text-align: right;
+    height: 100%;
+    min-width: 102px;
+
+    @media only screen and (max-width: 1023px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      color: $green500;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .tag {
+    background-color: #ffeb98;
+    border-radius: 15px;
+    font-size: 12px;
+    display: inline-block;
+    color: #323c32;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-weight: 400;
+  }
+}

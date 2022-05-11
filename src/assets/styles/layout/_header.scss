@@ -1,0 +1,73 @@
+.header {
+  background-color: $white;
+  border-bottom: 1px solid $grey;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 1023px) {
+      justify-content: center;
+      padding: 18px 0;
+    }
+  }
+
+  &__access-your-account {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 700;
+    }
+
+    .input {
+      margin: 0 15px;
+    }
+
+    button {
+      background: none;
+    }
+
+    @media only screen and (max-width: 1023px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+
+      span {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  &__container-right {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1023px) {
+      position: absolute;
+      top: 17px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    .btn-primary {
+      margin-right: 30px;
+
+      @media only screen and (max-width: 1023px) {
+        position: fixed;
+        bottom: 10px;
+        width: 39%;
+        left: auto;
+        right: -20px;
+      }
+    }
+    label {
+      user-select: none;
+    }
+  }
+}

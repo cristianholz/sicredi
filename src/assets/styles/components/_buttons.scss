@@ -1,0 +1,94 @@
+.btn-search {
+  background: $green800;
+  width: 50px;
+  height: 50px;
+
+  @media only screen and (max-width: 1023px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  svg {
+    max-width: 20px;
+  }
+}
+
+.btn-primary {
+  background: $green;
+  padding: 15px 20px;
+  color: $white;
+  font-weight: 700;
+  transition: background 0.2s ease;
+  border-radius: 4px;
+
+  &:hover {
+    background: $green500;
+  }
+}
+
+.btn-menu {
+  background: $green;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+
+  @media only screen and (max-width: 1023px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamburguer {
+    position: relative;
+    display: block;
+    background: $white;
+    width: 26px;
+    height: 2px;
+    top: 24px;
+    left: 12px;
+    transition: 0.5s ease-in-out;
+
+    @media only screen and (max-width: 1023px) {
+      top: 18px;
+      left: 7px;
+    }
+
+    &:before,
+    &:after {
+      background: $white;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: 0.5s ease-in-out;
+    }
+
+    &:before {
+      top: -10px;
+    }
+
+    &:after {
+      bottom: -10px;
+    }
+  }
+}
+
+#menu-hamburguer {
+  display: none;
+}
+
+#menu-hamburguer:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+#menu-hamburguer:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+#menu-hamburguer:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}

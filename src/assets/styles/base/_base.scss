@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+figure,
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+figure {
+  width: auto;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  position: relative;
+  padding: 0 40px;
+  width: 100%;
+
+  @media only screen and (max-width: 1023px) {
+    padding: 0 20px;
+  }
+}
